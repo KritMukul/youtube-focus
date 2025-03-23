@@ -1,3 +1,8 @@
+# This is a focus mode of youtube
+
+- This project allows a user to add their playlists and watch them in a focused manner without distractions.
+- This project will provide features like playlist completion study duration in future.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
