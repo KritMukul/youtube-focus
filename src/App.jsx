@@ -102,7 +102,7 @@ const HeroSection = () => {
               </div>
             </div>
 
-            <div className="w-full h-7 bg-green-200 mt-4">HELLOO!!</div>
+            {/* <div className="w-full h-7 bg-green-200 mt-4">HELLOO!!</div> */}
           </div>
         </div>
       </div>
