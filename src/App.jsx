@@ -3,7 +3,11 @@ import React from "react";
 const HeroSection = () => {
   return (
     <>
-          <img alt="Gradient" class="w-full h-full absolute left-0 top-0 object-fit object-center opacity-100 -z-10" src="https://t2fkwfyzv1d0gw7a.public.blob.vercel-storage.com/backgrounds/gradient.webp"></img>
+      <img
+        alt="Gradient"
+        class="w-full h-full absolute left-0 top-0 object-fit object-center opacity-100 -z-10"
+        src="https://t2fkwfyzv1d0gw7a.public.blob.vercel-storage.com/backgrounds/gradient.webp"
+      ></img>
       <div className="w-full">
         <div className="w-full h-auto">
           {/* <div className="absolute bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)] w-full h-[290px] -z-10"></div> */}
@@ -55,37 +59,48 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-              <div className="w-full h-full flex sm:flex-row flex-col justify-center sm:mb-20 items items-center sm:gap-16 gap-4 mb-12 sm:scale-100 scale-75">
-                <div className="w-auto h-auto bg-neutral-700 py-4 px-4 rounded-full border-dashed border-neutral-400 border-2 hover:drop-shadow-[0_15px_15px_rgba(255,255,255,0.15)] ">
-                  <h1>🎉 1/10 Videos Completed!</h1>
-                </div>
-                <div className="w-auto h-auto flex items-center  gap-2 bg-neutral-700 py-3 px-4 rounded-full border-dashed border-neutral-400 border-2 hover:drop-shadow-[0_15px_15px_rgba(255,255,255,0.15)]">
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      width="24"
-                    >
-                      <path
-                        d="m12 8v4l3 3m6-3c0 4.9706-4.0294 9-9 9-4.97056 0-9-4.0294-9-9 0-4.97056 4.02944-9 9-9 4.9706 0 9 4.02944 9 9z"
-                        stroke="#ffffff"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                      />
-                    </svg>
-                  </div>
-                  <h1>Current Session Duration : hh:mm:ss</h1>
-                </div>
+            <div className="w-full h-full flex sm:flex-row flex-col justify-center sm:mb-20 items items-center sm:gap-16 gap-4 mb-12 sm:scale-100 scale-75">
+              <div className="w-auto h-auto bg-neutral-700 py-4 px-4 rounded-full border-dashed border-neutral-400 border-2 hover:drop-shadow-[0_15px_15px_rgba(255,255,255,0.15)] ">
+                <h1>🎉 1/10 Videos Completed!</h1>
               </div>
+              <div className="w-auto h-auto flex items-center  gap-2 bg-neutral-700 py-3 px-4 rounded-full border-dashed border-neutral-400 border-2 hover:drop-shadow-[0_15px_15px_rgba(255,255,255,0.15)]">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <path
+                      d="m12 8v4l3 3m6-3c0 4.9706-4.0294 9-9 9-4.97056 0-9-4.0294-9-9 0-4.97056 4.02944-9 9-9 4.9706 0 9 4.02944 9 9z"
+                      stroke="#ffffff"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <h1>Current Session Duration : hh:mm:ss</h1>
+              </div>
+            </div>
           </div>
           <div className=" justify-center ">
             <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row lg:justify-evenly lg:mx-20 mx-10 justify-center items-center lg:items-start">
               <div className="bg-neutral-800 aspect-video  w-full lg:w-8/12 mb-4 lg:mb-0 p-4 rounded-2xl max-w-[1200px] ">
                 <div className=" w-full h-full bg-neutral-900 flex justify-center items-center">
-                  <div className="rounded-full w-12 h-12 bg-black opacity-20 flex">
+                  <iframe
+                    frameborder="0"
+                    allowfullscreen=""
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    title="Praying Mantis Fights Off Snake"
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/FqtFXJ_Qwqk?autoplay=1&amp;modestbranding=1&amp;rel=0&amp;controls=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fytfocusmode.netlify.app&amp;widgetid=1&amp;forigin=https%3A%2F%2Fytfocusmode.netlify.app%2F&amp;aoriginsup=1&amp;vf=6"
+                    id="widget2"
+                  ></iframe>
+                  {/* <div className="rounded-full w-12 h-12 bg-black opacity-20 flex">
                     <button className="w-full h-full flex">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +119,7 @@ const HeroSection = () => {
                         </g>
                       </svg>
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="lg:w-1/3 h-full flex justify-end w-2/3">
@@ -113,17 +128,22 @@ const HeroSection = () => {
                     <div className="pb-4 flex justify-between">
                       <p> Video 1/10 </p> <p>hh:mm:ss</p>
                     </div>
-                    <div className="flex w-full aspect-video bg-neutral-900 mb-4">
-                      <div className="bg-black aspect-video w-full"></div>
-                      <p className="absolute p-2">Vid1</p>
-                    </div>
-                    <div className="flex w-full aspect-video bg-neutral-900 mb-4">
-                      <div className="bg-black aspect-video w-full"></div>
-                      <p className="absolute p-2">Vid2</p>
-                    </div>
-                    <div className="flex w-full aspect-video bg-neutral-900 mb-4">
-                      <div className="bg-black aspect-video w-full"></div>
-                      <p className="absolute p-2">Vid3</p>
+                    <div className="overflow-y-auto max-h-[440px] pr-2">
+                      <div className="flex w-full aspect-video bg-neutral-900 mb-4">
+                        <div className="bg-black aspect-video w-full">
+                          <p className=" p-2">Vid1</p>
+                        </div>
+                      </div>
+                      <div className="flex w-full aspect-video bg-neutral-900 mb-4">
+                        <div className="bg-black aspect-video w-full">
+                          <p className=" p-2">Vid2</p>
+                        </div>
+                      </div>
+                      <div className="flex w-full aspect-video bg-neutral-900 mb-4">
+                        <div className="bg-black aspect-video w-full">
+                          <p className=" p-2">Vid3</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
